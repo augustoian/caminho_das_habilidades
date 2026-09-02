@@ -1,15 +1,16 @@
-const desafios =["Resolver problemas lógicos",
-    "Aprender funções novas",
-    "Encontrar padrões",
-    "Criar novas soluções",
-    "Analiasar erros"
+const desafios = [
+    "Resolver um problema lógico",
+    "Criar diferentes soluções",
+    "Aprender novas funções",
+    "Descobrir padrões",
+    "Pensar em uma nova invenção"
 ];
 
-function inicialDesafio(){
-    const name = document.getSelectionByid("name").value;
+function iniciarDesafio() {
 
-    if (name === ""){
-        alert("digite seu nome primeiro, ccatapimbas")
+    const nome = document.getElementById("nome").value;
+
+    if (nome === "") {
+        alert("Digite seu nome para começar!");
         return;
     }
-}
