@@ -1,1 +1,132 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container Principal */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Títulos e Textos */
+h1 {
+    color: #4a3f7a;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: #4a3f7a;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+/* Campos de Entrada (Input e Textarea) */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #667eea;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+/* Botões */
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Seção Dinâmica de Resultado */
+#resultado {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px dashed #eee;
+    text-align: left;
+}
+
+#resultado h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+#resultado h3 {
+    background-color: #f0f4ff;
+    color: #4a3f7a;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #667eea;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+#resultado p {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+#resultado p strong {
+    color: #4a3f7a;
+}
